@@ -15,7 +15,7 @@ Sebi Unipan: My name is short for Sebastian.
 ## Instructions
 
 Go analysis > SebiUnipan > Download 'Course Project Solo 122.twb' and open it with Tableau.
-Milestones 1-3 were assignments where I had to fetch a dataset, and get it approved. I then had to start formulating research questions around the dataset. Lastly I created many graphs to visualize the data in meaningful ways through python based pandas, numpy, matplotlib, and seaborn.
+Milestones 1-3 were assignments where I had to fetch a dataset, and get it approved. I then had to start formulating research questions around the dataset. Lastly I created many graphs to visualize the data in meaningful ways through python based pandas, numpy, matplotlib, and seaborn. These Milestone files can be opened with Jupyter Lab.
 
 ## References
 

@@ -1,0 +1,1687 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='CourseProjectSolo122' path='/t/data301dashboards/workbooks' revision='1.0' site='data301dashboards' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='default' inline='true' name='federated.1h8hzag0z7zs6n16djjju12831l2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='default' name='textscan.1xyhf1c0f5ygdb1fd2hyb1rjrkvr'>
+            <connection class='textscan' directory='C:/Users/seb/Documents/UBCO/COSC301/Project/course-project-solo_122/data/processed' filename='default.csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xyhf1c0f5ygdb1fd2hyb1rjrkvr' name='default.csv' table='[default#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='string' name='Workclass' ordinal='1' />
+            <column datatype='string' name='Education' ordinal='2' />
+            <column datatype='string' name='Marital Status' ordinal='3' />
+            <column datatype='string' name='Occupation' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='Sex' ordinal='6' />
+            <column datatype='integer' name='Hours/Week' ordinal='7' />
+            <column datatype='string' name='Native Country' ordinal='8' />
+            <column datatype='string' name='Yearly Income' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1xyhf1c0f5ygdb1fd2hyb1rjrkvr' name='default.csv' table='[default#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='string' name='Workclass' ordinal='1' />
+            <column datatype='string' name='Education' ordinal='2' />
+            <column datatype='string' name='Marital Status' ordinal='3' />
+            <column datatype='string' name='Occupation' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='Sex' ordinal='6' />
+            <column datatype='integer' name='Hours/Week' ordinal='7' />
+            <column datatype='string' name='Native Country' ordinal='8' />
+            <column datatype='string' name='Yearly Income' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Workclass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Workclass]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Workclass</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hours/Week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hours/Week]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Hours/Week</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Native Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Native Country]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Native Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yearly Income</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Yearly Income]</local-name>
+            <parent-name>[default.csv]</parent-name>
+            <remote-alias>Yearly Income</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[default.csv_C30127971AD14E0CA3A150EF7DCC076D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Hours/Week]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Native Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='default.csv' datatype='table' name='[__tableau_internal_object_id__].[default.csv_C30127971AD14E0CA3A150EF7DCC076D]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='default.csv' id='default.csv_C30127971AD14E0CA3A150EF7DCC076D'>
+            <properties context=''>
+              <relation connection='textscan.1xyhf1c0f5ygdb1fd2hyb1rjrkvr' name='default.csv' table='[default#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Age' ordinal='0' />
+                  <column datatype='string' name='Workclass' ordinal='1' />
+                  <column datatype='string' name='Education' ordinal='2' />
+                  <column datatype='string' name='Marital Status' ordinal='3' />
+                  <column datatype='string' name='Occupation' ordinal='4' />
+                  <column datatype='string' name='Race' ordinal='5' />
+                  <column datatype='string' name='Sex' ordinal='6' />
+                  <column datatype='integer' name='Hours/Week' ordinal='7' />
+                  <column datatype='string' name='Native Country' ordinal='8' />
+                  <column datatype='string' name='Yearly Income' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='EDA1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education Count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='default' name='federated.1h8hzag0z7zs6n16djjju12831l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h8hzag0z7zs6n16djjju12831l2'>
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[Education]' derivation='Count' name='[cnt:Education:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;HS-grad&quot;</bucket>
+              <bucket>&quot;Some-college&quot;</bucket>
+              <bucket>&quot;Bachelors&quot;</bucket>
+              <bucket>&quot;Masters&quot;</bucket>
+              <bucket>&quot;Assoc-voc&quot;</bucket>
+              <bucket>&quot;11th&quot;</bucket>
+              <bucket>&quot;Assoc-acdm&quot;</bucket>
+              <bucket>&quot;10th&quot;</bucket>
+              <bucket>&quot;7th-8th&quot;</bucket>
+              <bucket>&quot;Prof-school&quot;</bucket>
+              <bucket>&quot;9th&quot;</bucket>
+              <bucket>&quot;12th&quot;</bucket>
+              <bucket>&quot;Doctorate&quot;</bucket>
+              <bucket>&quot;5th-6th&quot;</bucket>
+              <bucket>&quot;1st-4th&quot;</bucket>
+              <bucket>&quot;Preschool&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]'>
+            <groupfilter function='level-members' level='[none:Marital Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Female&quot;' />
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Male&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</rows>
+        <cols>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Education:qk]</cols>
+      </table>
+      <simple-id uuid='{7CA8BDFF-76A3-4BA0-B663-CD09651BFD02}' />
+    </worksheet>
+    <worksheet name='EDA2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Age VS Yearly Income Count (&gt;$50K)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='default' name='federated.1h8hzag0z7zs6n16djjju12831l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h8hzag0z7zs6n16djjju12831l2'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Yearly Income]' role='dimension' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='Count' name='[cnt:Yearly Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='None' name='[none:Yearly Income:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]'>
+            <groupfilter from='&quot;Divorced&quot;' function='range' level='[none:Marital Status:nk]' to='&quot;Widowed&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Female&quot;' />
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Male&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]'>
+            <groupfilter function='member' level='[none:Yearly Income:nk]' member='&quot;&gt;50K&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]' scope='rows' value='Count of Yearly Income' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</rows>
+        <cols>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Age:qk]</cols>
+      </table>
+      <simple-id uuid='{2BC9D7E4-8651-4E2D-AA06-2ED6771BD368}' />
+    </worksheet>
+    <worksheet name='EDA3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Age VS Yearly Income Count (<=$50K)]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='default' name='federated.1h8hzag0z7zs6n16djjju12831l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h8hzag0z7zs6n16djjju12831l2'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Yearly Income]' role='dimension' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='Count' name='[cnt:Yearly Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='None' name='[none:Yearly Income:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]'>
+            <groupfilter from='&quot;Divorced&quot;' function='range' level='[none:Marital Status:nk]' to='&quot;Widowed&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Female&quot;' />
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Male&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]'>
+            <groupfilter function='member' level='[none:Yearly Income:nk]' member='&quot;&lt;=50K&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</rows>
+        <cols>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Age:qk]</cols>
+      </table>
+      <simple-id uuid='{1A0352F1-A2C7-42A7-B8F0-3F3BEC6CDB3F}' />
+    </worksheet>
+    <worksheet name='Research1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education VS Yearly Income Count (&gt;$50K)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='default' name='federated.1h8hzag0z7zs6n16djjju12831l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h8hzag0z7zs6n16djjju12831l2'>
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Yearly Income]' role='dimension' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='Count' name='[cnt:Yearly Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='None' name='[none:Yearly Income:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Bachelors&quot;</bucket>
+              <bucket>&quot;HS-grad&quot;</bucket>
+              <bucket>&quot;Some-college&quot;</bucket>
+              <bucket>&quot;Masters&quot;</bucket>
+              <bucket>&quot;Prof-school&quot;</bucket>
+              <bucket>&quot;Assoc-voc&quot;</bucket>
+              <bucket>&quot;Doctorate&quot;</bucket>
+              <bucket>&quot;Assoc-acdm&quot;</bucket>
+              <bucket>&quot;11th&quot;</bucket>
+              <bucket>&quot;10th&quot;</bucket>
+              <bucket>&quot;7th-8th&quot;</bucket>
+              <bucket>&quot;12th&quot;</bucket>
+              <bucket>&quot;9th&quot;</bucket>
+              <bucket>&quot;5th-6th&quot;</bucket>
+              <bucket>&quot;1st-4th&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]'>
+            <groupfilter from='&quot;Divorced&quot;' function='range' level='[none:Marital Status:nk]' to='&quot;Widowed&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Female&quot;' />
+              <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Male&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]'>
+            <groupfilter function='member' level='[none:Yearly Income:nk]' member='&quot;&gt;50K&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Sex:nk]</column>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Marital Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</rows>
+        <cols>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>&quot;1st-4th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>&quot;5th-6th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>25</value>
+                <value>&quot;9th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>29</value>
+                <value>&quot;12th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>35</value>
+                <value>&quot;7th-8th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>59</value>
+                <value>&quot;10th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>59</value>
+                <value>&quot;11th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>256</value>
+                <value>&quot;Assoc-acdm&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>280</value>
+                <value>&quot;Doctorate&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>344</value>
+                <value>&quot;Assoc-voc&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>406</value>
+                <value>&quot;Prof-school&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>918</value>
+                <value>&quot;Masters&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1336</value>
+                <value>&quot;Some-college&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1617</value>
+                <value>&quot;HS-grad&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2126</value>
+                <value>&quot;Bachelors&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{22582E21-7FAF-49DC-B812-BEDD923DFA40}' />
+    </worksheet>
+    <worksheet name='Research2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Education VS Yearly Income Count (<=$50K)]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='default' name='federated.1h8hzag0z7zs6n16djjju12831l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h8hzag0z7zs6n16djjju12831l2'>
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Yearly Income]' role='dimension' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='Count' name='[cnt:Yearly Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yearly Income]' derivation='None' name='[none:Yearly Income:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;HS-grad&quot;</bucket>
+              <bucket>&quot;Some-college&quot;</bucket>
+              <bucket>&quot;Bachelors&quot;</bucket>
+              <bucket>&quot;11th&quot;</bucket>
+              <bucket>&quot;Assoc-voc&quot;</bucket>
+              <bucket>&quot;10th&quot;</bucket>
+              <bucket>&quot;Assoc-acdm&quot;</bucket>
+              <bucket>&quot;Masters&quot;</bucket>
+              <bucket>&quot;7th-8th&quot;</bucket>
+              <bucket>&quot;9th&quot;</bucket>
+              <bucket>&quot;12th&quot;</bucket>
+              <bucket>&quot;5th-6th&quot;</bucket>
+              <bucket>&quot;1st-4th&quot;</bucket>
+              <bucket>&quot;Prof-school&quot;</bucket>
+              <bucket>&quot;Doctorate&quot;</bucket>
+              <bucket>&quot;Preschool&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]'>
+            <groupfilter function='member' level='[none:Yearly Income:nk]' member='&quot;&lt;=50K&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Yearly Income:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</rows>
+        <cols>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>45</value>
+                <value>&quot;Preschool&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>95</value>
+                <value>&quot;Doctorate&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>136</value>
+                <value>&quot;Prof-school&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>145</value>
+                <value>&quot;1st-4th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>276</value>
+                <value>&quot;5th-6th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>348</value>
+                <value>&quot;12th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>430</value>
+                <value>&quot;9th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>522</value>
+                <value>&quot;7th-8th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>709</value>
+                <value>&quot;Masters&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>752</value>
+                <value>&quot;Assoc-acdm&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>761</value>
+                <value>&quot;10th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>963</value>
+                <value>&quot;Assoc-voc&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>989</value>
+                <value>&quot;11th&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2918</value>
+                <value>&quot;Bachelors&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5342</value>
+                <value>&quot;Some-college&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[cnt:Yearly Income:qk]</field>
+                  <field>[federated.1h8hzag0z7zs6n16djjju12831l2].[none:Education:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>8223</value>
+                <value>&quot;HS-grad&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{EA45577B-E84C-4815-B002-4ECC0C99F1B5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='EDA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>EDA</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='33' param='horz' w='98500' x='750' y='894'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='31' param='horz' w='98500' x='750' y='894'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='29' param='horz' w='98500' x='750' y='894'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='18' param='horz' w='98500' x='750' y='894'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='5' param='vert' w='98500' x='750' y='894'>
+                    <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4693' id='7' w='98500' x='750' y='894'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93519' id='6' w='98500' x='750' y='5587'>
+                      <zone h='46755' id='14' name='EDA1' w='49249' x='750' y='5587'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='46764' id='15' name='EDA2' w='49249' x='750' y='52342'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='46764' id='16' name='EDA3' w='49251' x='49999' y='52342'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' fixed-size='431' forceUpdate='true' h='46755' id='19' is-fixed='true' w='49251' x='49999' y='5587'>
+                        <formatted-text>
+                          <run fontcolor='#000000' fontsize='12'>Here we can see three graphs. Let&apos;s start with the bar graph. Each bar in this graph represents the count of people with each specific education background. Most of the people from this dataset either didn&apos;t go to post-secondary or only completed some courses while the Bachelor count trails behind. Next is the blue line graph which illustrates the amount of people earning above</run>
+                          <run bold='true' fontcolor='#000000' fontsize='12'>Æ </run>
+                          <run fontcolor='#000000' fontsize='12'>$50K USD/year at specific age. The most dense count of people earning this much are aged around 35 - 50 years old. Finally, we reach the red line graph which shows us the amount of people earning less than or equal to $50K USD/year. Most of the people earning this much are way younger than those earning a higher salary which makes sense as people are just beginning their careers at the ages of 20 - 35.</run>
+                        </formatted-text>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>EDA</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='27' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98212' id='26' param='vert' w='98500' x='750' y='894'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4693' id='7' w='98500' x='750' y='894'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46758' id='14' is-fixed='true' name='EDA1' w='49250' x='750' y='5587'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' fixed-size='431' forceUpdate='true' h='46758' id='19' w='49250' x='50000' y='5587'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='12'>Here we can see three graphs. Let&apos;s start with the bar graph. Each bar in this graph represents the count of people with each specific education background. Most of the people from this dataset either didn&apos;t go to post-secondary or only completed some courses while the Bachelor count trails behind. Next is the blue line graph which illustrates the amount of people earning above</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>Æ </run>
+                    <run fontcolor='#000000' fontsize='12'>$50K USD/year at specific age. The most dense count of people earning this much are aged around 35 - 50 years old. Finally, we reach the red line graph which shows us the amount of people earning less than or equal to $50K USD/year. Most of the people earning this much are way younger than those earning a higher salary which makes sense as people are just beginning their careers at the ages of 20 - 35.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46761' id='15' is-fixed='true' name='EDA2' w='49249' x='750' y='52345'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46761' id='16' is-fixed='true' name='EDA3' w='49251' x='49999' y='52345'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{65689C41-BC3A-4FB4-929E-A8F35257414D}' />
+    </dashboard>
+    <dashboard name='Research'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='8' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='6' w='98400' x='800' y='1000'>
+              <zone h='71250' id='3' name='Research1' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='71250' id='5' name='Research2' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='26750' id='9' w='98400' x='800' y='72250'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='12'>What is the relationship between education level and yearly income?</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'><![CDATA[I conducted this research question by splitting the yearly income into the >$50K/year group and the <=$50K/year group and ranked their counts by education level. The highest number of top earners goes to the people who've completed a Bachelors degree which shows that getting a degree in post-secondary is already setting up for the best chance for success. Unsurprisingly, the highest number of people earning less than or equal to $50K/year are HS-Grads who haven't gotten any further schooling to learn new skills. We should note though that the amount of Bachelors in the low earning group is almost 1.5x that of the Bachelors in the top earning group. ]]></run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='17' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='16' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='71250' id='3' is-fixed='true' name='Research1' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='71250' id='5' is-fixed='true' name='Research2' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='26750' id='9' w='98400' x='800' y='72250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='12'>What is the relationship between education level and yearly income?</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'><![CDATA[I conducted this research question by splitting the yearly income into the >$50K/year group and the <=$50K/year group and ranked their counts by education level. The highest number of top earners goes to the people who've completed a Bachelors degree which shows that getting a degree in post-secondary is already setting up for the best chance for success. Unsurprisingly, the highest number of people earning less than or equal to $50K/year are HS-Grads who haven't gotten any further schooling to learn new skills. We should note though that the amount of Bachelors in the low earning group is almost 1.5x that of the Bachelors in the top earning group. ]]></run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{593A9846-677A-4FBA-BD3F-76C8262D4DDB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='EDA1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A89688C-46F4-401A-AF7E-35BABE102F99}' />
+    </window>
+    <window class='worksheet' name='EDA2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F7868B8F-52ED-4F0E-ADE4-4EDD99B4107D}' />
+    </window>
+    <window class='worksheet' name='EDA3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83EA449C-3D07-410E-9D08-55603B3A5FAF}' />
+    </window>
+    <window class='dashboard' name='EDA'>
+      <viewpoints>
+        <viewpoint name='EDA1' />
+        <viewpoint name='EDA2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EDA3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C27CD5EA-ED9E-482E-81BF-56129EF7D607}' />
+    </window>
+    <window class='worksheet' name='Research1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DAD7E612-F624-4401-8C49-795C8B88A6F1}' />
+    </window>
+    <window class='worksheet' name='Research2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65869E5C-4F56-4EE2-A8BD-87BD009E3FFF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Research'>
+      <viewpoints>
+        <viewpoint name='Research1' />
+        <viewpoint name='Research2' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DF50EB1E-1C93-4B18-ABA0-C1AB944E7223}' />
+    </window>
+  </windows>
+</workbook>

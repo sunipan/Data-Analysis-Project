@@ -9,5 +9,6 @@ Milestones 1-3 were assignments where I had to fetch a dataset, and get it appro
 
 ## References
 
-Adult Incomes dataset: https://archive.ics.uci.edu/ml/datasets/adult}
+Adult Incomes dataset: https://archive.ics.uci.edu/ml/datasets/adult
+
 VIDEO PRESENTATION LINK: https://www.youtube.com/watch?v=j5Z8cjz77aQ
